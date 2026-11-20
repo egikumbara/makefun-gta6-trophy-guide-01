@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 Trophies to Platinum</title>
+<meta name="description" content="Offline checklist and guide for all 55 Grand Theft Auto VI PlayStation 5 trophies: roadmap to platinum, missable flags, spoiler-safe story trophies, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Trophy Guide &amp; Tracker</h1>
+    <p class="sub">All 55 trophies, a roadmap to the platinum, and a guide for every one — in your own words, with its sources cited. Works fully offline.</p>
+  </div>
+  <div class="progress-card" aria-label="Platinum progress">
+    <div class="big" id="progressBig">0 / 55</div>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="pct" id="progressPct">0% to platinum</p>
+    <p class="grade-counts" id="gradeCounts"></p>
+  </div>
+</header>
+
+<section class="notice" id="honesty">
+  <strong>Read this first — an honest note about the list.</strong>
+  <span id="honestyText"></span>
+</section>
+
+<section class="roadmap" id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">Roughly 200 hours to the platinum (Push Square estimates up to 300). Difficulty about 4/10 — long, not hard. Never use cheats: they disable trophies and the save.</p>
+  <ol class="stages" id="stages"></ol>
+</section>
+
+<section class="controls" aria-label="Filters and settings">
+  <div class="control-row">
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum (1)</option>
+        <option value="gold">Gold (2)</option>
+        <option value="silver">Silver (6)</option>
+        <option value="bronze">Bronze (46)</option>
+      </select>
+    </label>
+    <label>Kind
+      <select id="kindFilter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="online">Online</option>
+      </select>
+    </label>
+    <label class="search">Search
+      <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off">
+    </label>
+    <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+    <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+  </div>
+  <div class="control-row">
+    <button id="exportBtn" type="button">Export progress (JSON)</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button" class="danger">Reset progress</button>
+    <span class="status" id="status" role="status"></span>
+  </div>
+  <p class="online-note" id="onlineNote" hidden>There are <strong>no online trophies</strong> in GTA VI: all 55 are earned in single-player / offline play, so nothing here needs PlayStation Plus or multiplayer. That is why this filter is empty.</p>
+  <p class="count-line" id="countLine"></p>
+</section>
+
+<main>
+  <ul class="trophy-list" id="trophyList"></ul>
+  <p class="empty" id="emptyState" hidden>No trophies match these filters. Try clearing the search or a filter.</p>
+</main>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Every trophy's guide cites its sources by name beside the guide; the full list of sources is below. Trophy names, descriptions and grades are shown exactly as the published pre-release list prints them. All guide text is written for this page, in our own words — sources are cited, never copied.</p>
+  <ul class="sources" id="sourceList"></ul>
+  <p class="fineprint">Unofficial fan guide. Not affiliated with Rockstar Games, Take-Two Interactive, Sony Interactive Entertainment or PlayStation. No Rockstar logo, artwork or game imagery is used. GTA VI releases 26 November 2026; this list is the pre-release list published by Exophase and PSNProfiles and cross-checked against the sources above. Data is stored only in your browser (localStorage); nothing leaves your device.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
